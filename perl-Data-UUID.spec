@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	UUID
 Summary:	Data::UUID - Perl extension for generating GUIDs/UUIDs
-Summary(pl):	Data::UUID - rozszerzenie Perla do generacji GUID-ów/UUID-ów
+Summary(pl):	Data::UUID - rozszerzenie Perla do generowania GUID-ów/UUID-ów
 Name:		perl-Data-UUID
 Version:	0.08
 Release:	2
@@ -28,13 +28,13 @@ different technologies rely on UUIDs to provide unique identity for
 various software components.
 
 %description -l pl
-Modu³ Perla Data::UUID udostêpnia szkielet generacji UUID-ów
+Modu³ Perla Data::UUID udostêpnia szkielet do generowania UUID-ów
 (Universally Unique Identifiers - identyfikatorów unikalnych
-powszechnie), znanych tez jako GUID-y (Globally Unique Identifiers -
+powszechnie), znanych te¿ jako GUID-y (Globally Unique Identifiers -
 identyfikatory unikalne globalnie). UUID-y s± 128-bitowe i
 gwarantowana jest ich unikalno¶æ w¶ród wszyskich innych UUID-ów/
 /GUID-ów wygenerowanych do roku 3400. UUID-y pierwotnie by³y u¿ywane w
-(Network Computing System (NCS), a pó¼niej w Rozproszonym ¦rodowisku
+Network Computing System (NCS), a pó¼niej w Rozproszonym ¦rodowisku
 Obliczeniowym (Distributed Computing Environment) Fundacji Open
 Software (OSF). Obecnie na zagwarantowanych przez UUID-y unikalnych
 identyfikatorach dla ró¿nych sk³adników oprogramowania opartych jest
