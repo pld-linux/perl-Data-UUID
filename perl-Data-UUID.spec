@@ -47,7 +47,7 @@ wiele ró¿nych technologii
 %build
 # Don't use pipes here: they generally don't work. Apply a patch.
 %{__perl} Makefile.PL </dev/null \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
