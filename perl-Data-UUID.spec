@@ -45,7 +45,7 @@ wiele ró¿nych technologii
 
 %build
 # Don't use pipes here: they generally don't work. Apply a patch.
-perl Makefile.PL </dev/null
+%{__perl} Makefile.PL </dev/null
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
