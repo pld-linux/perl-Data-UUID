@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
@@ -50,7 +50,7 @@ wiele ró¿nych technologii
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
