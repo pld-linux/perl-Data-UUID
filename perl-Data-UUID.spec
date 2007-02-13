@@ -6,7 +6,7 @@
 %define		pdir	Data
 %define		pnam	UUID
 Summary:	Data::UUID - Perl extension for generating GUIDs/UUIDs
-Summary(pl.UTF-8):   Data::UUID - rozszerzenie Perla do generowania GUID-ów/UUID-ów
+Summary(pl.UTF-8):	Data::UUID - rozszerzenie Perla do generowania GUID-ów/UUID-ów
 Name:		perl-Data-UUID
 Version:	0.14
 Release:	1
