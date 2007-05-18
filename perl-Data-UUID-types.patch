@@ -1,14 +1,7 @@
---- Data-UUID/UUID.h.orig	2006-02-21 13:04:53.000000000 +0100
-+++ Data-UUID/UUID.h	2006-02-26 22:36:59.000000000 +0100
-@@ -2,6 +2,7 @@
- #    define  __UUID_H__
- 
- #include <string.h>
-+#include <stdint.h>
- #include <stdio.h>
- #include <stdlib.h>
- #ifndef WIN32
-@@ -62,11 +63,11 @@
+diff -Nur Data-UUID-0.148/UUID.h Data-UUID-0.148.mod/UUID.h
+--- Data-UUID-0.148/UUID.h	2007-05-19 00:50:01.000000000 +0200
++++ Data-UUID-0.148.mod/UUID.h	2007-05-19 00:49:13.000000000 +0200
+@@ -77,12 +77,12 @@
  
  #define CHECK(f1, f2) if (f1 != f2) RETVAL = f1 < f2 ? -1 : 1;
  
@@ -18,8 +11,9 @@
 +typedef uint16_t           unsigned16;
  typedef unsigned char      unsigned8;
  typedef unsigned char      byte;
+ #ifndef _MSC_VER
 -typedef unsigned long long unsigned64_t;
 +typedef uint64_t           unsigned64_t;
- typedef unsigned64_t       perl_uuid_time_t;
- 
- #if   defined __solaris__ || defined __linux__
+ # else
+ typedef __int64 int64_t;
+ typedef unsigned __int64 uint64_t;
