@@ -70,6 +70,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Data/UUID.pm
 %dir %{perl_vendorarch}/auto/Data/UUID
-%{perl_vendorarch}/auto/Data/UUID/UUID.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Data/UUID/UUID.so
 %{_mandir}/man3/*
