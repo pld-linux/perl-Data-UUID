@@ -8,12 +8,12 @@
 Summary:	Data::UUID - Perl extension for generating GUIDs/UUIDs
 Summary(pl.UTF-8):	Data::UUID - rozszerzenie Perla do generowania GUID-ów/UUID-ów
 Name:		perl-Data-UUID
-Version:	1.217
-Release:	9
+Version:	1.221
+Release:	1
 License:	distributable
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Data/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	9d1baca208eab7bf2fd67184a03785a6
+# Source0-md5:	7619929e8fe205a7fb83bc1c29ecbf99
 Patch0:		%{name}-types.patch
 URL:		http://search.cpan.org/dist/Data-UUID/
 BuildRequires:	perl-devel >= 1:5.8.0
