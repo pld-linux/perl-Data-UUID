@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# Do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Data
 %define		pnam	UUID
 Summary:	Data::UUID - Perl extension for generating GUIDs/UUIDs
